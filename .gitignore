@@ -1,0 +1,164 @@
+# Environment Variables
+.env
+.env.local
+.env.*.local
+*.env
+*.env.venv
+
+# Virtual Environments
+.venv/
+venv/
+ENV/
+env/
+.virtualenv/
+*.venv
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+.hypothesis/
+*.cover
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+.pytype/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+.project
+.pydevproject
+.settings/
+*.sublime-project
+*.sublime-workspace
+.eclipse/
+
+# OS
+.DS_Store
+Thumbs.db
+*.log
+*.pot
+
+# Local development
+local_settings.py
+*.sqlite3
+*.sqlite
+*.db
+db.sqlite3
+database.db
+
+# Data files (keep CSVs in version control if small)
+# Uncomment if data files are large and should not be tracked
+# *.csv
+# *.xlsx
+# *.xls
+# *.parquet
+
+# Cache
+.cache/
+*.cache
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+tmp/
+temp/
+
+# Node (if using any frontend build tools)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Docker
+.dockerignore
+docker-compose.override.yml
+
+# IDE settings
+.vscode/settings.json
+.vscode/extensions.json
+
+# Environment-specific files
+instance/
+.webassets-cache
+
+# Application specific
+*.log
+logs/
+log/
+debug.log
+access.log
+error.log
+
+# Distribution / packaging
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+
+# Credentials and secrets
+secrets/
+.secrets
+credentials.json
+api_keys.json
+
+# Backup files
+*.backup
+*.bkp
+*.20*
+
+# System
+desktop.ini
+.AppleDouble
+
+.env.example
+.gitignore
+data/
+docs/
+requirements-dev.txt
+requirements.txt
+scripts/
+src/
+tests/
