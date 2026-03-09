@@ -11,7 +11,7 @@ import re
 from typing import Dict, List, Tuple, Any, Optional
 from datetime import datetime
 from pathlib import Path
-from config import settings
+from src.core.config import settings
 
 logger = logging.getLogger(__name__)
 

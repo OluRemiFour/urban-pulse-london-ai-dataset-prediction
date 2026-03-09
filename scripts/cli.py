@@ -26,8 +26,8 @@ def cli():
 @click.option('--clear', is_flag=True, help='Clear existing data first')
 def load_data(clear):
     """Load Zillow data into MongoDB"""
-    from data_processor import DataProcessor
-    from database import db
+    from src.pipeline.data_processor import DataProcessor
+    from src.core.database import db
     import asyncio
     
     async def _load():
@@ -58,7 +58,7 @@ def load_data(clear):
 @cli.command()
 def show_stats():
     """Display database statistics"""
-    from database import db
+    from src.core.database import db
     import asyncio
     
     async def _stats():
@@ -97,7 +97,7 @@ def show_stats():
 @click.option('--limit', default=10, help='Number of rows to show')
 def show_boroughs(sort, limit):
     """Display borough metrics"""
-    from database import db
+    from src.core.database import db
     import asyncio
     
     async def _boroughs():

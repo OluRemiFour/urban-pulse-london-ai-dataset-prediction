@@ -7,9 +7,9 @@ import asyncio
 import logging
 import sys
 from pathlib import Path
-from data_processor import DataProcessor
-from database import db
-from config import settings
+from src.pipeline.data_processor import DataProcessor
+from src.core.database import db
+from src.core.config import settings
 
 # Configure logging
 logging.basicConfig(

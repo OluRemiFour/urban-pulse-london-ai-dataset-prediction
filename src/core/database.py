@@ -7,8 +7,8 @@ import logging
 from typing import List, Optional, Dict, Any
 from datetime import datetime
 from motor.motor_asyncio import AsyncClient, AsyncDatabase, AsyncCollection
-from models import Property, BoroughMetrics
-from config import settings
+from src.core.models import Property, BoroughMetrics
+from src.core.config import settings
 
 logger = logging.getLogger(__name__)
 

@@ -11,13 +11,13 @@ from fastapi.responses import JSONResponse
 from typing import List, Optional
 from datetime import datetime
 
-from config import settings
-from database import db
-from models import (
+from src.core.config import settings
+from src.core.database import db
+from src.core.models import (
     BoroughResponse, PropertyResponse, PaginatedResponse,
     ErrorResponse, AnalyticsSummary
 )
-from data_processor import DataProcessor
+from src.pipeline.data_processor import DataProcessor
 
 # Configure logging
 logging.basicConfig(level=getattr(logging, settings.LOG_LEVEL))
