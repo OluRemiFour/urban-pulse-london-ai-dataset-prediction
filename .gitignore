@@ -79,12 +79,15 @@ local_settings.py
 db.sqlite3
 database.db
 
-# Data files (keep CSVs in version control if small)
-# Uncomment if data files are large and should not be tracked
-# *.csv
-# *.xlsx
-# *.xls
-# *.parquet
+# Data files
+data/
+*.csv
+*.xlsx
+*.xls
+*.parquet
+
+# Environment example files
+.env.example
 
 # Cache
 .cache/
