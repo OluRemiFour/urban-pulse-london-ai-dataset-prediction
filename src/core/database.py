@@ -6,7 +6,7 @@ Uses Motor for async I/O operations.
 import logging
 from typing import List, Optional, Dict, Any
 from datetime import datetime
-from motor.motor_asyncio import AIOMotorClient, AIOMotorDatabase, AIOMotorCollection
+from motor.motor_asyncio import AsyncIOMotorClient, AsyncIOMotorDatabase, AsyncIOMotorCollection
 from src.core.models import Property, BoroughMetrics
 from src.core.config import settings
 
@@ -17,15 +17,15 @@ class MongoDatabase:
     """MongoDB database connection and operations."""
     
     def __init__(self):
-        self.client: Optional[AIOMotorClient] = None
-        self.db: Optional[AIOMotorDatabase] = None
-        self.properties_collection: Optional[AIOMotorCollection] = None
-        self.borough_metrics_collection: Optional[AIOMotorCollection] = None
+        self.client: Optional[AsyncIOMotorClient] = None
+        self.db: Optional[AsyncIOMotorDatabase] = None
+        self.properties_collection: Optional[AsyncIOMotorCollection] = None
+        self.borough_metrics_collection: Optional[AsyncIOMotorCollection] = None
     
     async def connect(self):
         """Establish database connection."""
         try:
-            self.client = AIOMotorClient(settings.MONGODB_URL)
+            self.client = AsyncIOMotorClient(settings.MONGODB_URL)
             self.db = self.client[settings.MONGODB_DB_NAME]
             
             # Get collections
